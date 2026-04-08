@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ready School | Modern Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">AI Ready <span>School</span></div>
+        <div class="nav-links">
+            <a href="#products">Ecosystem</a>
+            <a href="#">Why Us</a>
+            <a href="#" class="btn-primary nav-btn">Book a Demo</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>India’s First Complete AI Ecosystem for Schools.</h1>
+            <p>Empower teachers, personalize learning, and future-proof your institution with our powerful suite of AI tools.</p>
+            <div class="button-group">
+                <a href="#" class="btn-primary">Get Started</a>
+                <a href="#products" class="btn-secondary">Explore Platform</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="products-section">
+        <h2 class="section-title">The Innovation Matrix</h2>
+        <p class="section-subtitle">Five core products working together to transform education.</p>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-icon">👩‍🏫</div>
+                <h3>Morpheus</h3>
+                <p>The AI teaching assistant that automates lesson planning, grading, and administrative tasks.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">🧠</div>
+                <h3>Cypher</h3>
+                <p>A 24/7 personalized AI learning companion designed to help every student at their own pace.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">⚙️</div>
+                <h3>Zion</h3>
+                <p>A comprehensive suite of AI tools engineered specifically for streamlined school administration.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">🔬</div>
+                <h3>NEO</h3>
+                <p>The innovation lab bringing hands-on AI literacy and practical tech skills to classrooms.</p>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">🔐</div>
+                <h3>Matrix</h3>
+                <p>The secure, enterprise-grade AI infrastructure ensuring data privacy for modern schools.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.product-card');
+        hiddenElements.forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
