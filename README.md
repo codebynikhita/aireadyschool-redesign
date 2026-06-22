@@ -30,17 +30,7 @@ Before writing any code, I reviewed the live www.aireadyschool.com homepage. I l
 
 ---
 
-### 🎨 Step 2: Component-Driven Design (Figma)
-**Figma File:** https://www.figma.com/design/15psqet1TIqlDpaKff5s6x/AI-Ready-School?node-id=0-1&t=qVNctlwXqKBW5hus-1
-
-Before coding, I created a lightweight, high-fidelity mockup in Figma to establish a scalable design system. 
-* I utilized **Auto Layout** extensively to map out the responsive behavior of the navigation and product grids.
-* I built a **Master Component** for the product cards, ensuring visual consistency across the "Innovation Matrix."
-* The CSS Flexbox architecture in my final code directly mirrors the Auto Layout logic established in this Figma file.
-
----
-
-### 💻 Step 3: What I Built (The Code)
+### 💻 Step 2: What I Built (The Code)
 The design is fully responsive and works across mobile and desktop devices.
 Given the time limits, I focused entirely on designing and building a mobile-responsive **Navigation, Hero Section, and Product Grid**. 
 
@@ -49,6 +39,6 @@ Given the time limits, I focused entirely on designing and building a mobile-res
 
 ---
 
-### 🚀 Step 4: Next Steps (With More Time)
+### 🚀 Step 3: Next Steps (With More Time)
 * Implement a backend to capture leads from the "Book a Demo" button.
 * Build out dedicated landing pages with deeper details for each of the 5 core products.
